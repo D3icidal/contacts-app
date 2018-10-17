@@ -40,11 +40,17 @@ class Api::ContactsController < ApplicationController
 
   def update
     find
-    
+    @contact.update(
+      first_name: params[:first_name] || @contact.first_name,
+      last_name: params[:last_name] || @contact.last_name,
+      email: params[:email] || @contact.email,
+      phone_number: params[:phone_number] || @contact.phone_number
+      )
+    render 'show.json.jbuilder'
   end
 
   def destroy
-    Contacts.delete(params[:io])
+    Contact.delete(params[:id])
     render 'destroy.json.jbuilder'
   end
 
