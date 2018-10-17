@@ -25,16 +25,22 @@ class Api::ContactsController < ApplicationController
       email: params[:email],
       phone_number: params[:phone_number]
       )
+    @contact.save
     render 'show.json.jbuilder'
   end
 
   def show
-    @contact = Contacts.find_by(:id, params[:id])
+    find
     render 'show.json.jbuilder'
   end
 
-  def update
+  def find
+    @contact = Contact.find_by(id: params[:id])
+  end
 
+  def update
+    find
+    
   end
 
   def destroy
