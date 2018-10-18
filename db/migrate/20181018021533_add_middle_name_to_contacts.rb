@@ -5,3 +5,4 @@ class AddMiddleNameToContacts < ActiveRecord::Migration[5.2]
     add_column :contacts, :bio, :text
   end
 end
+ 
