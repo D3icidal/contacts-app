@@ -51,12 +51,13 @@ class Api::ContactsController < ApplicationController
     # else
     #   render json: []
     # end
+    # find
+    # p "********************************************"
+    # # if @contact.user =
+    # # p @contact
+    # p @contact.user.id
+    # p current_user.id
     find
-    p "********************************************"
-    # if @contact.user =
-    # p @contact
-    p @contact.user.id
-    p current_user.id
     if @contact.user.id == current_user.id
       render 'show.json.jbuilder'
     else
