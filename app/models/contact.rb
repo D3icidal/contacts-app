@@ -4,5 +4,6 @@ class Contact < ApplicationRecord
     updated_at.strftime("%A, %d %b %Y %l:%M %p")
   end
 
+  belongs_to :user
   
 end

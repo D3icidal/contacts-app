@@ -14,8 +14,17 @@ class Api::ContactsController < ApplicationController
   # end
 
   def index
-    @contacts = Contact.all
-    render 'index.json.jbuilder'
+    puts "\t\t********** Current user: #{current_user.username}"
+    p 'current_user'
+    p current_user
+    if current_user
+      @contacts = current_user.contacts
+      render "index.json.jbuilder"
+    else
+      render json: []
+    end
+    # @contacts = Contact.all
+    # render 'index.json.jbuilder'
   end
 
   def create
@@ -25,15 +34,34 @@ class Api::ContactsController < ApplicationController
       last_name: params[:last_name],
       email: params[:email],
       bio: params[:bio],
-      phone_number: params[:phone_number]
+      phone_number: params[:phone_number],
+      user_id: current_user.id
       )
     @contact.save
     render 'show.json.jbuilder'
   end
 
   def show
+    puts "\t\t********** Current user: #{current_user.username}"
+    p 'current_user'
+    p current_user
+    # if current_user#if a valid user
+    #   find
+    #   render 'show.json.jbuilder'
+    # else
+    #   render json: []
+    # end
     find
-    render 'show.json.jbuilder'
+    p "********************************************"
+    # if @contact.user =
+    # p @contact
+    p @contact.user.id
+    p current_user.id
+    if @contact.user.id == current_user.id
+      render 'show.json.jbuilder'
+    else
+      render json: "Not Authorized to view this contact"
+    end
   end
 
   def find
