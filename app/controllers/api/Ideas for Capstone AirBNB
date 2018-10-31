@@ -1,0 +1,99 @@
+
+Capstone:
+What problem are you solving?
+  (Air)BnBs do not have a great way of getting familair with the BnB they are staying at. The average one post a couple of pages of information on the fridge that includes wifi, garbage rules, parking rules, and maybe their favorite resturant. The better ones make a big binder full of information like hotels do.
+  I want to solve this problem by making a digital online app that can act as a Welcome Guide to neatly store all that info so it can be accessed by a tablet that is sitting out near the front door, or on the guests phone.
+
+What are the inputs/outputs?
+  Inputs would be all teh details and information about a BnB that the host decides to include.
+
+  Output would be the information that the guest clicks on, so Parking Rules, Garbage Rules, WiFi information, etc.
+
+What additional info do you need?
+  API from AirBnB to make it easier to import host website data
+  Google maps API
+  Local city Parking/Garbage APIs to know about alternate side parking days.
+  Is there a cool blueprint style image of a house with street, backyard, frontyard, etc.
+
+
+  Features that guest can access:   (#Optional if I have time)
+    About me and my home
+
+    Keys/Doors/Locks
+
+    Electronics
+      Wifi password (maybe a quick connect button too? WPS? QR code? NFC?)
+      How to work TV
+      How to work Smart Home (Generic Alexa Guide, Google-Home, etc)
+
+    Ammenties access
+      Fridge stuff they can have?
+      Laundry?
+      Garage
+      Parking
+      Hottub/pool
+      firepits
+
+    Pets and info
+
+    Garbage and Recycling guide
+
+    Guides
+      Things To Do
+      Event Calendar
+      Resturants
+      Bars
+      Family places
+      Secrete Gems
+
+
+
+
+
+
+======
+
+We are starting to think about Capstones. The Capstone will be a project that you will work on throughout the course. As we learn new concepts in class as well as research you do on your own, you will add those concepts into your individual project. 
+
+You're going to spend a long time on your capstone and it will be a representation of who you are as a developer by the time it's complete. First step to getting a good idea...Brainstorming! Remember that you are not expected to know how to code this app at this time, don't let that determine the type of app that you want to build.
+
+Brainstorming
+Here are a couple things to think about when brainstorming
+List - many project ideas before you start thinking about details.
+examples: You could be interested in making video games, saving the earth, a scheduling app for meetup.com events, etc.
+List - What problem are you trying to solve? Starting here produces some of the best apps.
+Hint: The more specific the problem, the easier it is to address. A social app may 'Help people to connect'. When can you say that people have connected? Is it when they send the first message or meet in person? A more specific problem would be 'Modern culture in Chicago makes it hard for people to meet face to face, this app helps people find like-minded individuals and sets up a time and place where they can meet'.
+List - What technologies are you excited about?
+True, we are making a web-application but we can think bigger than that. There is a physical that you can interact with. Microcontrollers are wifi enabled, webcams can be used, smart house appliances are coming out everyday (coffee pots, locks, lights, etc.) have API's. 
+example: this wifi enabled egg carton http://www.amazon.com/Quirky-Egg-Minder-Enabled-Smart/dp/B00GN92KQ4 uses the wink api http://docs.wink.apiary.io/# 
+Is there a type of database, websockets or Javascript library that you've heard about or researched? Look around online for ideas to upgrade the tools your app could use.
+The goal here is to find (research) technologies that will set you apart from your other classmates and make you stand out at the showcase. The "WOW!". This is also where most of your growth independent learning comes from as a developer in this course.
+
+Boiling it down
+Only narrow down your options once you've made a decent run at brainstorming. Pick a couple (2 to 4) of your brainstorming ideas. Really think through if you are excited about this project. Talk to me if you need help. Submit a paragraph for each of your final ideas. Your submission must include the problem you are trying to solve and include any research you've done on the concept.
+
+=======
+
+When you submit your idea, please follow the following format. For every idea, write out a list of features. List your features sequentially, i.e. if feature B depends on feature A, include feature A first. Where order doesn't matter, put the ones you believe are easiest first. Also, of those features, mark which ones are absolutely necessary for the most basic version of your app to work by bolding them. Here's an example:
+
+Student Evaluation App
+
+Main concept: An app that educational administrators can use to track the progress of their instructors through student evaluations.
+
+Features:
+1. A user can create an account.
+2. A user can create a survey template for their instructors.
+3. A user can add instructors to a database
+4. A user can choose from a list of previously created survey templates, and choose from a list of previously entered instructors to create a specific survey to send out.
+5. A user can then add student email addresses. After all the students emails addresses are entered, a link is emailed to students to fill out the survey.
+6. A student opens the link, and completes the survey. When finished, it's saved to the database.
+7. A user can visit a dashboard to see all the results of a particular instructor's evaluation results.
+8. On the dashboard, charts show what how well an instructor did for a particular class.
+9. On the dashboard, charts show how well instructors have done over numerous classes.
+10. On the dashboard, a user can compare other teachers against each other.
+11. A user can send eval results easily to instructors just by clicking a button.
+12. A user can send all eval results to all instructors that use a particular template. The report to an instructor should show how he/she did relative to other instructors, but hide their names.
+13. Students are sent email reminders to fill out the survey after a certain time period if they haven't already.
+14. Users can share other templates with or from other users.
+
+=====
